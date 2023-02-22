@@ -1,0 +1,188 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    font-family: sans-serif,'Montserrat';
+    font-weight: 200;
+    font-size: small;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.Topcontainer{
+    background-image: repeating-radial-gradient(farthest-side at 250px 220px, #ECF9FF ,#ADFFFF);
+    padding-bottom: 50px;
+    animation: slidein 0.6s cubic-bezier(0,1.03,1,1.2) forwards;
+}
+/* Navigation Bar */
+/* .Navigation Bar Default Settings */
+.Navigationbar{
+    position: fixed;
+    min-width: 90%;
+    padding: 1.2rem 8%;
+    z-index: 100;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image:radial-gradient(rgba(255, 255, 255, 0.721),rgba(255, 255, 255, 0.735)) ;
+    backdrop-filter: blur (2px);
+    border-bottom: 2px solid rgba(0,0,0,1);
+    animation: slidein 0.8s 0.7ms cubic-bezier(0,1.14,1,1) forwards;
+    font-size: 1rem;
+}
+/* Modifies Settings */
+.Navbar{
+    padding: 12px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* .Navigation Bar Items */
+.navbarlogo{
+    max-width: 200px !important;
+    float: left;
+}
+ul{
+    margin-top: 4px;
+}
+.navbaritems{
+    padding-right: 40px;
+    transition: 0.3s;
+}
+.navbaritems:hover{
+    color: #467575;
+}
+
+/* Navigation Bar Button */
+.walletbtn{
+    padding: 6px;
+    border-radius: 16px;
+    border: 2px solid #00AAB1;
+    color: #00AAB1;
+    background-image: repeating-linear-gradient(#E6F4F1 ,#DBFFFF );
+}
+.walletbtn:hover {
+    background-image: radial-gradient(#00AAB1,#47c5dbb4);
+    color: #fff;
+    border-color: #467575;
+}
+/* Section 1 */
+
+.Section-1 {
+    text-align: justify;
+    padding: 30vh;
+}
+.Section-1 h1{
+    padding-top: 70px;
+    font-weight: 900;
+    color: #0b7275;
+}
+.Section-1  p{
+    font-size: large;
+    padding-bottom: 40px;
+    font-weight: 100;
+}
+.Section1-button1{
+    border: 2px solid #14d1db ;
+    padding: 10px;
+    background-image: repeating-linear-gradient(#E6F4F1 ,#DBFFFF );
+    border-radius: 16px;
+    color: #00AAB1;
+}
+.Section1-button1:hover{
+    color: #000;
+    border-color: #000;
+}
+.Section1-button2{
+    border: 2px solid #00AAB1 ;
+    padding: 10px 30px;
+    border-radius: 16px;
+    color: #00AAB1;
+}
+.Section1-button2:hover{
+    color: #000;
+    border-color: #000;
+}
+.Section1-pic{
+    float: right;
+    animation: coin 2.1s  ease-in-out infinite backwards;
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animations */
+
+@keyframes slidein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes popin {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+        transform: rotateY(75deg);
+    }
+    50%{
+        opacity: 0.5;
+        transform: rotateZ(-6deg);
+    }
+    75%{
+        opacity: 0.75;
+        transform: rotateX(7deg);
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+
+@keyframes coin {
+    0%{
+        
+        opacity: 1;
+        transform: rotateY(0deg);
+    }50%{
+        opacity: 0.5;
+        transform: rotateY(90deg);
+    }100%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
