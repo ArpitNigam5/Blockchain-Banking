@@ -1,120 +1,148 @@
-*{
+* {
     scroll-behavior: smooth;
 }
 
-
-body{
+body {
     margin: 0;
-    font-family: sans-serif,'Montserrat';
+    font-family: sans-serif, 'Montserrat';
     font-weight: 200;
     font-size: small;
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
-.Topcontainer{
-    background-image: repeating-radial-gradient(farthest-side at 250px 220px, #ECF9FF ,#ADFFFF);
+
+.Topcontainer {
+    background-image: repeating-radial-gradient(farthest-side at 250px 220px, #ECF9FF, #ADFFFF);
     padding-bottom: 50px;
-    animation: slidein 0.6s cubic-bezier(0,1.03,1,1.2) forwards;
+    animation: slidein 0.6s cubic-bezier(0, 1.03, 1, 1.2) forwards;
 }
+
+
 /* Navigation Bar */
+
+
 /* .Navigation Bar Default Settings */
-.Navigationbar{
+
+.Navigationbar {
     position: fixed;
     width: 100%;
     padding: 1.2rem 8%;
     z-index: 100;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-image:radial-gradient(rgba(255, 255, 255, 0.721),rgba(255, 255, 255, 0.735)) ;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.721), rgba(255, 255, 255, 0.735));
     backdrop-filter: blur (2px);
-    border-bottom: 2px solid rgba(0,0,0,1);
-    animation: slidein 0.8s 0.7ms cubic-bezier(0,1.14,1,1) forwards;
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+    animation: slidein 0.8s 0.7ms cubic-bezier(0, 1.14, 1, 1) forwards;
     font-size: 1rem;
 }
+
+
 /* Modifies Settings */
-.Navbar{
+
+.Navbar {
     padding: 12px;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
 }
 
+
 /* .Navigation Bar Items */
-.navbarlogo{
+
+.navbarlogo {
     max-width: 200px !important;
     float: left;
 }
-ul{
+
+ul {
     margin-top: 4px;
 }
-.navbaritems{
+
+.navbaritems {
     padding-right: 40px;
     transition: 0.3s;
 }
-.navbaritems:hover{
+
+.navbaritems:hover {
     color: #467575;
 }
 
+
 /* Navigation Bar Button */
-.walletbtn{
+
+.walletbtn {
     padding: 6px;
     border-radius: 16px;
     border: 2px solid #00AAB1;
     color: #00AAB1;
-    background-image: repeating-linear-gradient(#E6F4F1 ,#DBFFFF );
+    background-image: repeating-linear-gradient(#E6F4F1, #DBFFFF);
 }
+
 .walletbtn:hover {
-    background-image: radial-gradient(#00AAB1,#47c5dbb4);
+    background-image: radial-gradient(#00AAB1, #47c5dbb4);
     color: #fff;
     border-color: #467575;
 }
+
+
 /* Section 1 */
 
 .Section-1 {
     text-align: justify;
     padding: 30vh;
 }
-.Section-1 h1{
+
+.Section-1 h1 {
     padding-top: 70px;
     font-weight: 900;
     color: #0b7275;
 }
-.Section-1  p{
+
+.Section-1 p {
     font-size: large;
     padding-bottom: 40px;
     font-weight: 100;
 }
-.Section1-button1{
-    border: 2px solid #14d1db ;
+
+.Section1-button1 {
+    border: 2px solid #14d1db;
     padding: 10px;
-    background-image: repeating-linear-gradient(#E6F4F1 ,#DBFFFF );
+    background-image: repeating-linear-gradient(#E6F4F1, #DBFFFF);
     border-radius: 16px;
     color: #00AAB1;
 }
-.Section1-button1:hover{
+
+.Section1-button1:hover {
     color: #000;
     border-color: #000;
 }
-.Section1-button2{
-    border: 2px solid #00AAB1 ;
+
+.Section1-button2 {
+    border: 2px solid #00AAB1;
     padding: 10px 30px;
     border-radius: 16px;
     color: #00AAB1;
 }
-.Section1-button2:hover{
+
+.Section1-button2:hover {
     color: #000;
     border-color: #000;
 }
-.Section1-pic{
+
+.Section1-pic {
     float: right;
-    animation: coin 2.1s  ease-in-out infinite backwards;
+    animation: coin 2.1s ease-in-out infinite backwards;
     width: 400px;
     height: 400px;
 }
 
+
 /* Section-2 */
+
 
 /* .Section-2{
     padding: 80px 30vh;
@@ -129,53 +157,56 @@ ul{
   max-width: 10%;
   vertical-align: middle;
 } */
+
+
 /* .stake{
     text-align: end;
 }
 .Section-2 h1{
     text-align: center;
-} */ 
+} */
+
 
 /* .swap{
     display: inline-block;
 } */
 
-.anchor{
+.anchor {
     text-decoration: none;
 }
 
-.anchor1{
+.anchor1 {
     text-decoration: none;
     color: #000;
 }
 
-.container-fluid{
+.container-fluid {
     display: flex;
     background-color: #14d1db;
     padding: 100px;
 }
 
-.swap{
+.swap {
     padding-left: 200px;
     text-align: left;
 }
 
-.stake{
+.stake {
     padding-right: 200px;
     text-align: left;
 }
 
-.container-fluid .swap p{
+.container-fluid .swap p {
     padding-right: 50px;
     line-height: 2;
-} 
+}
 
-.container-fluid .stake p{
+.container-fluid .stake p {
     padding-left: 50px;
     line-height: 2;
-} 
+}
 
-.imgs{
+.imgs {
     display: block;
     padding: 20px;
     width: 50%;
@@ -186,74 +217,74 @@ ul{
     padding-left: 50px;
 }
 
+
 /* footer section */
 
-#footer{
+#footer {
     padding: 7% 15%;
     text-align: center;
 }
 
-.social-icon{
-margin: 20px 10px ;
+.social-icon {
+    margin: 20px 10px;
 }
 
-#footer .anchor{
+#footer .anchor {
     color: black;
 }
-
 
 
 /* Animations */
 
 @keyframes slidein {
-    0%{
+    0% {
         opacity: 0;
     }
-    25%{
-        opacity:0.25;
+    25% {
+        opacity: 0.25;
     }
-    50%{
+    50% {
         opacity: 0.5;
     }
-    75%{
+    75% {
         opacity: 0.75;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
+
 @keyframes popin {
-    0%{
+    0% {
         opacity: 0;
     }
-    25%{
+    25% {
         opacity: 0.25;
         transform: rotateY(75deg);
     }
-    50%{
+    50% {
         opacity: 0.5;
         transform: rotateZ(-6deg);
     }
-    75%{
+    75% {
         opacity: 0.75;
         transform: rotateX(7deg);
     }
-    100%{
+    100% {
         opacity: 1;
-        
     }
 }
 
-
 @keyframes coin {
-    0%{
-        
+    0% {
         opacity: 1;
         transform: rotateY(0deg);
-    }50%{
+    }
+    50% {
         opacity: 0.5;
         transform: rotateY(90deg);
-    }100%{
+    }
+    100% {
         opacity: 1;
         transform: rotateX(0deg);
     }
