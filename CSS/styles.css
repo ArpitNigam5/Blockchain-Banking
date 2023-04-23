@@ -186,6 +186,21 @@ ul{
     padding-left: 50px;
 }
 
+/* footer section */
+
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.social-icon{
+margin: 20px 10px ;
+}
+
+#footer .anchor{
+    color: black;
+}
+
 
 
 /* Animations */
