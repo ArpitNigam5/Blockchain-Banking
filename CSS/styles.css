@@ -22,7 +22,7 @@ a{
 /* .Navigation Bar Default Settings */
 .Navigationbar{
     position: fixed;
-    min-width: 90%;
+    width: 100%;
     padding: 1.2rem 8%;
     z-index: 100;
     border-bottom-left-radius: 10px;
@@ -114,20 +114,77 @@ ul{
     height: 400px;
 }
 
+/* Section-2 */
 
+/* .Section-2{
+    padding: 80px 30vh;
+}
+.Section-2  p{
+    font-size: large;
+    padding-bottom: 40px;
+    font-weight: 100;
+    display: inline-block;
+}
+/* .img{
+  max-width: 10%;
+  vertical-align: middle;
+} */
+/* .stake{
+    text-align: end;
+}
+.Section-2 h1{
+    text-align: center;
+} */ 
 
+/* .swap{
+    display: inline-block;
+} */
 
+.anchor{
+    text-decoration: none;
+}
 
+.anchor1{
+    text-decoration: none;
+    color: #000;
+}
 
+.container-fluid{
+    display: flex;
+    background-color: #14d1db;
+    padding: 100px;
+}
 
+.swap{
+    padding-left: 200px;
+    text-align: left;
+}
 
+.stake{
+    padding-right: 200px;
+    text-align: left;
+}
 
+.container-fluid .swap p{
+    padding-right: 50px;
+    line-height: 2;
+} 
 
+.container-fluid .stake p{
+    padding-left: 50px;
+    line-height: 2;
+} 
 
+.imgs{
+    display: block;
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+}
 
-
-
-
+.stake .imgs {
+    padding-left: 50px;
+}
 
 
 
