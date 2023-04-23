@@ -1,3 +1,15 @@
+:root{
+    --primary-color:#ADFFFF;
+    /* --primary-color: #8884FF; */
+    --secondary-color:#ECF9FF;
+    /* --secondary-color: #D7BCE8; */
+    --third-color:#14d1db;
+}
+
+
+
+
+
 *{
     scroll-behavior: smooth;
 }
@@ -8,13 +20,14 @@ body{
     font-family: sans-serif,'Montserrat';
     font-weight: 200;
     font-size: small;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
     color: #000;
 }
-.Topcontainer{
-    background-image: repeating-radial-gradient(farthest-side at 250px 220px, #ECF9FF ,#ADFFFF);
+.section1{
+    background-image: conic-gradient(var(--secondary-color),var(--primary-color),var(--primary-color),var(--secondary-color),var(--secondary-color),var(--primary-color),var(--primary-color),var(--secondary-color),var(--secondary-color));
     padding-bottom: 50px;
     animation: slidein 0.6s cubic-bezier(0,1.03,1,1.2) forwards;
 }
@@ -23,11 +36,9 @@ a{
 .Navigationbar{
     position: fixed;
     min-width: 90%;
-    padding: 1.2rem 8%;
+    padding: 1rem 8%;
     z-index: 100;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-image:radial-gradient(rgba(255, 255, 255, 0.721),rgba(255, 255, 255, 0.735)) ;
+    background-image:radial-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.4)) ;
     backdrop-filter: blur (2px);
     border-bottom: 2px solid rgba(0,0,0,1);
     animation: slidein 0.8s 0.7ms cubic-bezier(0,1.14,1,1) forwards;
@@ -35,7 +46,7 @@ a{
 }
 /* Modifies Settings */
 .Navbar{
-    padding: 12px;
+    padding: 10px;
     display: flex;
     justify-content:space-between;
     align-items:center;
@@ -43,7 +54,7 @@ a{
 
 /* .Navigation Bar Items */
 .navbarlogo{
-    max-width: 200px !important;
+    max-width: 180px !important;
     float: left;
 }
 ul{
@@ -61,12 +72,12 @@ ul{
 .walletbtn{
     padding: 6px;
     border-radius: 16px;
-    border: 2px solid #00AAB1;
-    color: #00AAB1;
+    border: 2px solid var(--third-color);
+    color: var(--third-color);
     background-image: repeating-linear-gradient(#E6F4F1 ,#DBFFFF );
 }
 .walletbtn:hover {
-    background-image: radial-gradient(#00AAB1,#47c5dbb4);
+    background-image: radial-gradient(var(--third-color),#47c5dbb4);
     color: #fff;
     border-color: #467575;
 }
@@ -74,7 +85,7 @@ ul{
 
 .Section-1 {
     text-align: justify;
-    padding: 30vh;
+    padding: 35vh 30vh;
 }
 .Section-1 h1{
     padding-top: 70px;
@@ -91,44 +102,162 @@ ul{
     padding: 10px;
     background-image: repeating-linear-gradient(#E6F4F1 ,#DBFFFF );
     border-radius: 16px;
-    color: #00AAB1;
+    color: var(--third-color);
 }
 .Section1-button1:hover{
     color: #000;
     border-color: #000;
 }
 .Section1-button2{
-    border: 2px solid #00AAB1 ;
+    border: 2px solid var(--third-color) ;
     padding: 10px 30px;
     border-radius: 16px;
-    color: #00AAB1;
+    color: var(--third-color);
 }
 .Section1-button2:hover{
     color: #000;
     border-color: #000;
 }
 .Section1-pic{
+    padding: 20px;
     float: right;
-    animation: coin 2.1s  ease-in-out infinite backwards;
+    animation: coin 2s  linear infinite ;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+}
+
+/* Section 2 */
+
+.section2{
+    padding: 30vh 15vh;
+    background: repeating-radial-gradient(farthest-side at 2px 2px,#D7BCE8,#8884FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: large;
+}
+.swap{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section2-image{
+    height: 400px;
+    width: 400px;
+    float: left;
+    padding-right: 100px;
+}
+.section3{
+    padding: 30vh 15vh;
+    background: repeating-radial-gradient(farthest-side at 2000px 2200px,#D7BCE8,#8884FF);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: large;
+}
+.stake{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section3-image{
+    height: 500px;
+    width: 500px;
+    float: right;
+    padding-right: 100px;
+}
+.section4{
+    padding: 30vh 15vh;
+    display: flex;
+    justify-content:space-evenly;
+    background: radial-gradient(farthest-side at 5px 4px ,#77B6EA,#C3979F);
+    /* color: var(--secondary-color); */
+    font-size: large;
+    align-items: center;
+}
+.section4-1-image{
+    width: 400px;
+    height: 400px;
+}
+.section4-2-image{
     width: 400px;
     height: 400px;
 }
 
+.button{
+    width: 250px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px 5px;
+    color: var(--secondary-color);
+    border: 3px solid;
+    border-color: var(--secondary-color);
+}
+.button:is(:hover, :focus){
+    color: var(--secondary-color);
+    border-color: #8884FF;
+}
+.button a:hover{
+    color: #8884FF;
+}                                                   
+                                            /* Section 1 Glow Effect */
+.glow-effect{
+    position: relative;
+    --container-offset: 60px;
+    stroke:var(--secondary-color) ;
+    stroke-dasharray: 6px 24px;
+}
 
+.glow-container{
+    pointer-events: none;
+    position: absolute;
+    inset: calc(var(--container-offset)/-2);
+    width: calc(100% + var(--container-offset));
+    height: calc(100% + var(--container-offset));
+    opacity: 0;
+}
+.glow-blur,
+.glow-line{
+    width: calc(100% - var(--container-offset));
+    height: calc(100% - var(--container-offset));
+    x: calc(var(--container-offset)/2);
+    y: calc(var(--container-offset)/2);
+    fill:transparent;
+    stroke-width:2px;
+}
+.glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur){
+    stroke-dashoffset: -65px;
+    transition: 1.6s;
+}
+.glow-blur{
+    filter: blur(5px);
+}
+.glow-effect:is(:hover, :focus) .glow-container{
+    animation: glow 1.8s infinite linear;
+}
+.footer{
+    background-image: #2F4550 ;
+}
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+}
 
+.social-icon {
+    margin: 20px 50px;
+    font-size: 36px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#footer .anchor {
+    color: black;
+}
 
 
 /* Animations */
@@ -174,15 +303,13 @@ ul{
 
 
 @keyframes coin {
-    0%{
-        
-        opacity: 1;
-        transform: rotateY(0deg);
-    }50%{
-        opacity: 0.5;
+    50%{
         transform: rotateY(90deg);
     }100%{
-        opacity: 1;
         transform: rotateX(0deg);
     }
+}
+@keyframes glow {
+    0%{opacity: 0}
+    25% ,75% {opacity: 1}
 }
